@@ -81,9 +81,6 @@ public class OkHttpGetRequest{
                         @Override
                         public void onFailure(Call call, IOException e) {
                             {
-                                HandlerEntity entit=new HandlerEntity();
-                                entit.setObject1(e);
-                                entit.setUrl(url);
                                 subscriber.onError(e);
                             }
                         }
@@ -103,7 +100,7 @@ public class OkHttpGetRequest{
                                     fileOutputStream.write(buffer, 0, len);
                                 }
                                 fileOutputStream.flush();
-                                Log.d("qing", "文件下载成功...");
+                                Log.d("dan", "文件下载成功...");
                             }
                         }
                     });
