@@ -20,7 +20,8 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
 /**
- *
+ *Created by dan on 2016/10/10.
+ * QQ：435675213
  */
 public class MainActivity extends AppCompatActivity {
 
@@ -36,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         click_me_BN = (Button) findViewById(R.id.click_me_BN);
         img_01 = (ImageView) findViewById(R.id.img_01);
+        result_TV = (TextView) findViewById(R.id.result_TV);
+
         downloadUtils = new DownloadUtils();
         click_me_BN.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
                             @Override
                             public void onNext(String s) {
+                                result_TV.setText(s);
                                 Log.i("***************",s);
                             }
                         });
