@@ -154,7 +154,7 @@ public class OkHttpGetRequest{
 //                fileOutputStream.write(buffer, 0, len);
 //            }
 //            fileOutputStream.flush();
-//            Log.d("qing", "文件下载成功...");
+//            Log.d("dan", "文件下载成功...");
 //        }
 //
 //    }
