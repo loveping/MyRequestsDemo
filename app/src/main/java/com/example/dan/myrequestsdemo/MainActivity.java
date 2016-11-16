@@ -21,8 +21,9 @@ import rx.schedulers.Schedulers;
 
 /**
  *Created by dan on 2016/10/10.
- * QQ：435675213
+ *QQ：435675213
  */
+
 public class MainActivity extends AppCompatActivity {
 
     private Button click_me_BN;
@@ -64,7 +65,8 @@ public class MainActivity extends AppCompatActivity {
 //                            }
 //                        });
 
-                OkHttp3Request.get().url(path)
+                OkHttp3Request.get()
+                        .url(path)
                         .addParams("iDisplayStart", "1")
                         .addParams("iDisplayLength", "10")
                         .build()
